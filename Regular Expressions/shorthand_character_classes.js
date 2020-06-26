@@ -17,3 +17,9 @@ shortHand.test(varNames); // Returns true
 let quoteSample = "The five boxing wizards jump quickly.";
 let nonAlphabetRegex = /\W/g; // opposite of \w is \W with uppercase and its equal to [^A-Za-z0-9_]
 let result = quoteSample.match(nonAlphabetRegex).length;
+
+
+//Match All Numbers
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // \d is equal to [0-9]
+let result = movieName.match(numRegex).length;
