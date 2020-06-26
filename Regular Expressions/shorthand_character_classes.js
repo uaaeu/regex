@@ -23,3 +23,8 @@ let result = quoteSample.match(nonAlphabetRegex).length;
 let movieName = "2001: A Space Odyssey";
 let numRegex = /\d/g; // \d is equal to [0-9]
 let result = movieName.match(numRegex).length;
+
+//Match All Non-Numbers
+let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; // \D is opposite of \d and its equal to [^0-9]
+let result = movieName.match(noNumRegex).length;
