@@ -12,3 +12,8 @@ longHand.test(numbers); // Returns true
 shortHand.test(numbers); // Returns true
 longHand.test(varNames); // Returns true
 shortHand.test(varNames); // Returns true
+
+//opposite of \w
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g; // opposite of \w is \W with uppercase and its equal to [^A-Za-z0-9_]
+let result = quoteSample.match(nonAlphabetRegex).length;
